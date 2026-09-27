@@ -20,7 +20,7 @@ public class SpringJdbcApp1Application {
 		ConfigurableApplicationContext container = SpringApplication.run(SpringJdbcApp1Application.class, args);
 		IVaccineService service = container.getBean(IVaccineService.class);
 		String status = service.registerVaccineInfo(new Vaccine("covaccine","BharetBio",1212));
-		
+		 System.out.println(status);
 	}
 
 }
