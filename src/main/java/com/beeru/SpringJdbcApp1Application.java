@@ -3,6 +3,10 @@ package com.beeru;
 import com.beeru.model.Vaccine;
 import com.beeru.service.IVaccineService;
 import com.beeru.service.VaccineService;
+import com.sun.tools.javac.util.List;
+
+import java.util.ArrayList;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -21,6 +25,7 @@ public class SpringJdbcApp1Application {
 		IVaccineService service = container.getBean(IVaccineService.class);
 		String status = service.registerVaccineInfo(new Vaccine("covaccine","BharetBio",1212));
 		 System.out.println(status);
+		 List<Vaccine>vaccines=ArrayList<>();
 	}
 
 }
