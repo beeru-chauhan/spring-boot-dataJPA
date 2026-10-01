@@ -21,6 +21,7 @@ public class SpringJdbcApp1Application {
 	}
 
 	public static void main(String[] args) {
+		//ioc container
 		ConfigurableApplicationContext container = SpringApplication.run(SpringJdbcApp1Application.class, args);
 		IVaccineService service = container.getBean(IVaccineService.class);
 		String status = service.registerVaccineInfo(new Vaccine("covaccine","BharetBio",1212));
