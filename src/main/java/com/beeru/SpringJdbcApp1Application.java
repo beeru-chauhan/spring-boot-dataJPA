@@ -27,6 +27,7 @@ public class SpringJdbcApp1Application {
 		String status = service.registerVaccineInfo(new Vaccine("covaccine","BharetBio",1212));
 		 System.out.println(status);
 		 List<Vaccine>vaccines=ArrayList<>();
+		 vaccines.add
 	}
 
 }
